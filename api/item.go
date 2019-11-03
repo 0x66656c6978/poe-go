@@ -54,6 +54,9 @@ type Item struct {
 	Id                     string    `json:"id"`
 	IsIdentified           bool      `json:"identified"`
 	IsCorrupted            bool      `json:"corrupted"`
+	IsElder                bool      `json:"elder"`
+	IsShaper               bool      `json:"shaper"`
+	IsSynthesized          bool      `json:"synthesised"`
 	IsLockedToCharacter    bool      `json:"lockedToCharacter"`
 	IsSupport              bool      `json:"support"`
 	DescriptionText        string    `json:"descrText"`
