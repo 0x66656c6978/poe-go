@@ -26,6 +26,10 @@ const (
 	RelicFrameType
 )
 
+type ExtendedItemInfo struct {
+	Category string `json:"category"`
+}
+
 type Item struct {
 	// Names for some items may include markup. For example: <<set:MS>><<set:M>><<set:S>>Roth's Reach
 	Name string `json:"name"`
@@ -33,6 +37,8 @@ type Item struct {
 
 	Properties   []ItemProperty `json:"properties"`
 	Requirements []ItemProperty `json:"requirements"`
+
+	Extended ExtendedItemInfo `json:"extended"`
 
 	Sockets []Socket `json:"sockets"`
 
